@@ -34,8 +34,10 @@ public class PersonHandler {
     public String forLoop() {
         String result = "";
         int counter = 0;
-        for (i = 0; i < counter.length; i++){
-            
+        for (int i = 0; i < personArray.length; i++){
+            result += personArray[counter].toString();
+            counter++;
+
         }
         // identify initial value
         // identify terminal condition
@@ -54,7 +56,7 @@ public class PersonHandler {
 
 
     public String forEachLoop() {
-        String result = "";
+        String result = "";;
         // identify array's type
         // identify array's variable-name
 
@@ -63,6 +65,11 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+
+        for (Person i : personArray){
+            result += i.toString();
+
+        }
 
         return result;
     }
